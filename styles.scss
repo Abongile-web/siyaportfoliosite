@@ -1,0 +1,106 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+//Header section
+
+header {
+    height: 100vh;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/Assets/studio\ background.jpg');
+  background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    //navigation section 
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.911);
+        color: white;
+        padding: 5px;
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        ul {
+            display: flex;
+            margin: 0;
+            li {
+                list-style: none;
+                margin: 0px 20px;
+                font-weight: bold;
+                cursor: pointer;
+                transition: 0.3s ease;
+            }
+            :hover {
+                color: rgba(255, 255, 255, 0.849);
+            }
+        }
+
+        .social-icons {
+            i {
+                margin: 5px;
+                cursor: pointer;
+                transition: 0.3s ease;
+            }
+            :hover {
+                color: rgba(255, 255, 255, 0.849);
+            }
+        }
+    }
+
+
+    //main content section 
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        width: 100vw;
+        height: 90vh;
+
+        .content {
+            width: 40vw;
+
+            h1 {
+                font-size: 60px;
+                font-weight: bold;
+                padding-bottom: 20px;
+            }
+
+            p {
+                font-size: 22px;
+                padding-bottom: 20px;
+            }
+
+            a {
+                background-color: #F20008;
+                border: 2px solid #F20008;
+                padding: 10px 15px;
+                cursor: pointer;
+                font-weight: bold;
+                transition: 0.3s ease;
+            }
+            a:hover {
+                background-color: transparent;
+                border: 2px solid white;
+            }
+        }
+
+        .playlist {
+            padding: 40px;
+            iframe {
+                width: 700px;
+            }
+        }
+    }
+}
