@@ -335,4 +335,37 @@ header main .playlist iframe {
   background-color: transparent;
   border: 2px solid white;
 }
+
+footer {
+  background-color: #202020;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer h1 {
+  font-size: 18px;
+  font-weight: bolder;
+  padding-bottom: 5px;
+}
+
+footer .social-icons {
+  padding-bottom: 5px;
+}
+
+footer .social-icons i {
+  margin: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+footer .social-icons :hover {
+  color: #F20008;
+}
+
+footer p {
+  font-size: 12px;
+  font-weight: lighter;
+}
 /*# sourceMappingURL=styles.css.map */
