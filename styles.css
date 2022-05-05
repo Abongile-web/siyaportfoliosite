@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 header {
   min-height: 70vh;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/Assets/studio background.jpg");
@@ -63,7 +67,7 @@ header nav .social-icons i {
 }
 
 header nav .social-icons :hover {
-  color: rgba(255, 255, 255, 0.849);
+  color: #F20008;
 }
 
 header main {
@@ -81,10 +85,12 @@ header main {
   color: white;
   width: 100vw;
   min-height: 70vh;
+  padding: 40px;
 }
 
 header main .content {
   width: 700px;
+  padding-bottom: 40px;
 }
 
 header main .content h1 {
@@ -138,7 +144,7 @@ header main .playlist iframe {
 .video iframe {
   width: 900px;
   height: 600px;
-  padding-bottom: 80px;
+  padding: 0 40px 80px 40px;
 }
 
 .gallery {
@@ -240,11 +246,93 @@ header main .playlist iframe {
 }
 
 .about .about-content .social-icons :hover {
-  color: rgba(255, 255, 255, 0.849);
+  color: #F20008;
 }
 
 .about img {
   width: 400px;
   padding: 80px 40px;
+}
+
+.contact {
+  min-height: 50vh;
+  color: white;
+  background-color: #4C036B;
+  background-image: url("/Assets/triangles.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.contact .image {
+  background-image: url("/Assets/Siya image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 600px;
+  min-height: 700px;
+}
+
+.contact .contact-content {
+  min-height: 700px;
+  width: 600px;
+  background-color: #202020;
+  padding: 40px;
+}
+
+.contact .contact-content h1 {
+  font-size: 60px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.contact .contact-content p {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.contact .contact-content form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact .contact-content form input {
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.contact .contact-content form #message {
+  padding-bottom: 100px;
+}
+
+.contact .contact-content form #button {
+  width: 120px;
+  color: white;
+  font-weight: bold;
+  background-color: #F20008;
+  border: 2px solid #F20008;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.contact .contact-content form #button:hover {
+  background-color: transparent;
+  border: 2px solid white;
 }
 /*# sourceMappingURL=styles.css.map */
