@@ -167,3 +167,54 @@ header {
         width: 500px;
     }
 }
+
+
+
+// About section 
+
+.about {
+    min-height: 50vh;
+    background-color: #202020;
+    background-image: url('/Assets/Rectangle\ 6.png');
+    background-position: 0px 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+
+    .about-content {
+        width: 700px;
+        padding: 20px;
+
+        h1 {
+            font-size: 60px;
+            font-weight: bold;
+            padding-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            padding-bottom: 10px;
+        }
+
+        .social-icons {
+            i {
+                margin: 5px;
+                cursor: pointer;
+                transition: 0.3s ease;
+            }
+            :hover {
+                color: rgba(255, 255, 255, 0.849);
+            }
+        }
+    }
+
+    img {
+        width: 400px;
+        padding: 80px 40px;
+    }
+}

@@ -193,4 +193,58 @@ header main .playlist iframe {
 .gallery .carousel {
   width: 500px;
 }
+
+.about {
+  min-height: 50vh;
+  background-color: #202020;
+  background-image: url("/Assets/Rectangle 6.png");
+  background-position: 0px 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px;
+}
+
+.about .about-content {
+  width: 700px;
+  padding: 20px;
+}
+
+.about .about-content h1 {
+  font-size: 60px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.about .about-content p {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+.about .about-content .social-icons i {
+  margin: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.about .about-content .social-icons :hover {
+  color: rgba(255, 255, 255, 0.849);
+}
+
+.about img {
+  width: 400px;
+  padding: 80px 40px;
+}
 /*# sourceMappingURL=styles.css.map */
