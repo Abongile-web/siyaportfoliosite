@@ -9,7 +9,7 @@
 //Header section
 
 header {
-    height: 100vh;
+    min-height: 70vh;
     background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/Assets/studio\ background.jpg');
   background-size:cover;
     background-position: center;
@@ -64,12 +64,13 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
         color: white;
         width: 100vw;
-        height: 90vh;
+        min-height: 70vh;
 
         .content {
-            width: 40vw;
+            width: 700px;
 
             h1 {
                 font-size: 60px;
@@ -102,5 +103,28 @@ header {
                 width: 700px;
             }
         }
+    }
+}
+
+
+// Video section 
+
+.video {
+    min-height: 50vh;
+    background-color: #202020;
+    background-image: url('/Assets/triangles.png');
+    text-align: center;
+    color: white;
+
+    h1 {
+        padding: 40px 0;
+        font-size: 60px;
+        font-weight: bold;
+    }
+
+    iframe {
+        width: 900px;
+        height: 600px;
+        padding-bottom: 80px;
     }
 }

@@ -6,7 +6,7 @@
 }
 
 header {
-  height: 100vh;
+  min-height: 70vh;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("/Assets/studio background.jpg");
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Assets/studio background.jpg");
   background-size: cover;
@@ -76,13 +76,15 @@ header main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   color: white;
   width: 100vw;
-  height: 90vh;
+  min-height: 70vh;
 }
 
 header main .content {
-  width: 40vw;
+  width: 700px;
 }
 
 header main .content h1 {
@@ -117,5 +119,25 @@ header main .playlist {
 
 header main .playlist iframe {
   width: 700px;
+}
+
+.video {
+  min-height: 50vh;
+  background-color: #202020;
+  background-image: url("/Assets/triangles.png");
+  text-align: center;
+  color: white;
+}
+
+.video h1 {
+  padding: 40px 0;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.video iframe {
+  width: 900px;
+  height: 600px;
+  padding-bottom: 80px;
 }
 /*# sourceMappingURL=styles.css.map */
