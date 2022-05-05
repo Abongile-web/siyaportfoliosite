@@ -142,8 +142,8 @@ header main .playlist iframe {
 }
 
 .video iframe {
-  width: 900px;
-  height: 600px;
+  width: 80vw;
+  height: 800px;
   padding: 0 40px 80px 40px;
 }
 
@@ -367,5 +367,11 @@ footer .social-icons :hover {
 footer p {
   font-size: 12px;
   font-weight: lighter;
+}
+
+@media screen and (min-width: 800px) {
+  .contact-content h1 {
+    font-size: 40px !important;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
