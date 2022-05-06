@@ -5,8 +5,21 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
 }
 
 header {
@@ -32,6 +45,9 @@ header nav {
   background-color: rgba(0, 0, 0, 0.911);
   color: white;
   padding: 20px;
+  position: fixed;
+  width: 100vw;
+  z-index: 100;
 }
 
 header nav .logo {
@@ -90,6 +106,7 @@ header main {
   width: 100vw;
   min-height: 70vh;
   padding: 40px;
+  padding-top: 10vh;
 }
 
 header main .content {
@@ -137,6 +154,7 @@ header main .playlist iframe {
   background-image: url("/Assets/triangles.png");
   text-align: center;
   color: white;
+  padding-top: 40px;
 }
 
 .video h1 {
@@ -172,6 +190,7 @@ header main .playlist iframe {
       -ms-flex-align: center;
           align-items: center;
   color: white;
+  padding-top: 40px;
 }
 
 .gallery .carousel-container {
@@ -224,6 +243,7 @@ header main .playlist iframe {
       -ms-flex-align: center;
           align-items: center;
   padding: 40px;
+  padding-top: 60px;
 }
 
 .about .about-content {
@@ -379,12 +399,9 @@ footer p {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
   header nav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    min-height: 12vh;
   }
   header nav ul {
     -webkit-box-orient: vertical;
@@ -398,13 +415,17 @@ footer p {
     width: 100vw;
     z-index: 99;
     background-color: rgba(0, 0, 0, 0.911);
-    top: 21.5vh;
+    top: 11vh;
+    left: 0;
     text-align: center;
     padding: 40px;
     -webkit-transform: translateY(-200%);
             transform: translateY(-200%);
-    -webkit-transition: 0.3s ease;
-    transition: 0.3s ease;
+    -webkit-transition: 0.9s ease;
+    transition: 0.9s ease;
+  }
+  header main {
+    padding-top: 15vh;
   }
   header main .content {
     width: 300px;
@@ -427,6 +448,10 @@ footer p {
     display: flex;
     padding: 10px;
   }
+  .mobile {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
   .video iframe {
     width: 300px;
     height: 250px;
@@ -435,9 +460,15 @@ footer p {
   .video h1 {
     font-size: 40px;
   }
+  .video {
+    padding-top: 60px;
+  }
   .gallery h1 {
     font-size: 40px;
     padding-bottom: 0;
+  }
+  .gallery {
+    padding-top: 60px;
   }
   .gallery .carousel {
     width: 300px;
@@ -454,6 +485,9 @@ footer p {
   }
   .about .about-content p {
     font-size: 14px;
+  }
+  .about {
+    padding-top: 90px;
   }
   .contact .image {
     display: none;

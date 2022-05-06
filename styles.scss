@@ -5,8 +5,20 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     overflow-x: hidden;
+}
+
+a {
+    color: white;
+}
+a:hover {
+    text-decoration: none;
+    color: white;
 }
 
 
@@ -29,6 +41,9 @@ header {
         background-color: rgba(0, 0, 0, 0.911);
         color: white;
         padding: 20px;
+        position: fixed;
+        width: 100vw;
+        z-index: 100;
 
         .logo {
             font-size: 28px;
@@ -77,6 +92,7 @@ header {
         width: 100vw;
         min-height: 70vh;
         padding: 40px;
+        padding-top: 10vh;
 
         .content {
             width: 600px;
@@ -125,6 +141,7 @@ header {
     background-image: url('/Assets/triangles.png');
     text-align: center;
     color: white;
+    padding-top: 40px;
 
     h1 {
         padding: 40px 0;
@@ -153,6 +170,7 @@ header {
     justify-content: center;
     align-items: center;
     color: white;
+    padding-top: 40px;
 
     .carousel-container {
         display: flex;
@@ -195,6 +213,7 @@ header {
     justify-content: center;
     align-items: center;
     padding: 40px;
+    padding-top: 60px;
 
     .about-content {
         width: 700px;
@@ -359,11 +378,12 @@ footer {
 
 // -------------------Mobile responsiveness -------------------
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
     header {
 
         nav {
-            flex-direction: column;
+            //flex-direction: column;
+            min-height: 12vh;
             ul {
                 flex-direction: column;
                 justify-content: space-around;
@@ -372,15 +392,17 @@ footer {
                 width: 100vw;
                 z-index: 99;
                 background-color: rgba(0, 0, 0, 0.911);
-                top: 21.5vh;
+                top: 11vh;
+                left: 0;
                 text-align: center;
                 padding: 40px;
                 transform: translateY(-200%);
-                transition: 0.3s ease;
+                transition: 0.9s ease;
             }
         }
 
         main {
+            padding-top: 15vh;
             .content {
                 width: 300px;
             }
@@ -405,6 +427,9 @@ footer {
         display: flex;
         padding: 10px;
     }
+    .mobile {
+        transform: translateY(0%);
+    }
 
     //video section
     .video iframe {
@@ -415,6 +440,9 @@ footer {
     .video h1 {
         font-size: 40px;
     }
+    .video {
+        padding-top: 60px;
+    }
 
 
     //gallery section 
@@ -424,6 +452,7 @@ footer {
         padding-bottom: 0;
     }
     .gallery {
+        padding-top: 60px;
         .carousel {
             width: 300px;
         }
@@ -443,6 +472,9 @@ footer {
     }
     .about .about-content p {
         font-size: 14px;
+    }
+    .about {
+        padding-top: 90px;
     }
 
 
