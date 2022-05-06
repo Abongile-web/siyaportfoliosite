@@ -31,7 +31,7 @@ header nav {
           align-items: center;
   background-color: rgba(0, 0, 0, 0.911);
   color: white;
-  padding: 5px;
+  padding: 20px;
 }
 
 header nav .logo {
@@ -89,7 +89,7 @@ header main {
 }
 
 header main .content {
-  width: 700px;
+  width: 600px;
   padding-bottom: 40px;
 }
 
@@ -124,7 +124,7 @@ header main .playlist {
 }
 
 header main .playlist iframe {
-  width: 700px;
+  width: 600px;
 }
 
 .video {
@@ -197,7 +197,7 @@ header main .playlist iframe {
 }
 
 .gallery .carousel {
-  width: 500px;
+  width: 400px;
 }
 
 .about {
@@ -369,9 +369,80 @@ footer p {
   font-weight: lighter;
 }
 
-@media screen and (min-width: 800px) {
-  .contact-content h1 {
-    font-size: 40px !important;
+@media screen and (max-width: 840px) {
+  .contact .contact-content h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header main .content {
+    width: 300px;
+  }
+  header main .playlist iframe {
+    width: 300px;
+  }
+  header main .content h1 {
+    font-size: 40px;
+  }
+  header main .content p {
+    font-size: 14px;
+  }
+  header main .playlist {
+    padding: 0;
+  }
+  .video iframe {
+    width: 300px;
+    height: 250px;
+    padding: 0px 0 40px 0;
+  }
+  .video h1 {
+    font-size: 40px;
+  }
+  .gallery h1 {
+    font-size: 40px;
+    padding-bottom: 0;
+  }
+  .gallery .carousel {
+    width: 300px;
+  }
+  .gallery .carousel-container {
+    padding: 20px;
+  }
+  .about img {
+    width: 300px;
+    padding: 10px 0;
+  }
+  .about .about-content h1 {
+    font-size: 40px;
+  }
+  .about .about-content p {
+    font-size: 14px;
+  }
+  .contact .image {
+    display: none;
+  }
+  .contact .contact-content {
+    width: 300px;
+    min-height: 400px;
+  }
+  .contact .contact-content h1 {
+    font-size: 30px;
+  }
+  .contact .contact-content p {
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

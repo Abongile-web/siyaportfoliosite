@@ -28,7 +28,7 @@ header {
         align-items: center;
         background-color: rgba(0, 0, 0, 0.911);
         color: white;
-        padding: 5px;
+        padding: 20px;
 
         .logo {
             font-size: 28px;
@@ -75,7 +75,7 @@ header {
         padding: 40px;
 
         .content {
-            width: 700px;
+            width: 600px;
             padding-bottom: 40px;
 
             h1 {
@@ -106,7 +106,7 @@ header {
         .playlist {
             padding: 40px;
             iframe {
-                width: 700px;
+                width: 600px;
             }
         }
     }
@@ -170,7 +170,7 @@ header {
     }
 
     .carousel {
-        width: 500px;
+        width: 400px;
     }
 }
 
@@ -333,13 +333,113 @@ footer {
 
 
 
+
+
+
+
 // -------------------iPad responsiveness ----------------------
 
 
-@media screen and (min-width: 800px) {
-    .contact-content {
+@media screen and (max-width: 840px) {
+    .contact .contact-content {
         h1 {
-            font-size: 40px !important;
+            font-size: 40px;
         }
     }
 }
+
+
+
+
+
+
+// -------------------Mobile responsiveness -------------------
+
+@media screen and (max-width: 768px) {
+    header {
+
+        nav {
+            flex-direction: column;
+            ul {
+                flex-direction: column;
+            }
+        }
+
+        main {
+            .content {
+                width: 300px;
+            }
+            .playlist {
+                iframe {
+                    width: 300px;
+                }
+            }
+        }
+
+    }
+    header main .content h1 {
+        font-size: 40px;
+    }
+    header main .content p {
+        font-size: 14px;
+    }
+    header main .playlist {
+        padding: 0;
+    }
+
+    //video section
+    .video iframe {
+        width: 300px;
+        height: 250px;
+        padding: 0px 0 40px 0;
+    }
+    .video h1 {
+        font-size: 40px;
+    }
+
+
+    //gallery section 
+    
+    .gallery h1 {
+        font-size: 40px;
+        padding-bottom: 0;
+    }
+    .gallery {
+        .carousel {
+            width: 300px;
+        }
+    }
+    .gallery .carousel-container {
+        padding: 20px;
+    }
+
+
+    //about section
+    .about img {
+        width: 300px;
+        padding: 10px 0;
+    }
+    .about .about-content h1 {
+        font-size: 40px;
+    }
+    .about .about-content p {
+        font-size: 14px;
+    }
+
+
+    //contact section 
+    .contact .image {
+        display: none;
+    }
+    .contact .contact-content {
+        width: 300px;
+        min-height: 400px;
+    }
+    .contact .contact-content h1 {
+        font-size: 30px;
+    }
+    .contact .contact-content p {
+        font-size: 14px;
+    }
+} 
+
