@@ -341,13 +341,14 @@ header main .playlist iframe {
           flex-direction: column;
 }
 
-.contact .contact-content form input {
+.contact .contact-content form input, .contact .contact-content form textarea {
   margin: 10px 0;
   padding: 10px;
 }
 
 .contact .contact-content form #message {
   padding-bottom: 100px;
+  word-wrap: break-word;
 }
 
 .contact .contact-content form #button {

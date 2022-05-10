@@ -300,13 +300,14 @@ header {
             display: flex;
             flex-direction: column;
 
-            input {
+            input, textarea {
                 margin: 10px 0;
                 padding: 10px;
             }
 
             #message {
                 padding-bottom: 100px;
+                word-wrap: break-word;
             }
 
             #button {
